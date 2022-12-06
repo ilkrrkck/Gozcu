@@ -1,0 +1,25 @@
+from asyncio.windows_events import NULL
+from cgi import test
+import codecs
+from datetime import date, datetime
+from fileinput import close
+import os
+from subprocess import Popen
+import sys
+import threading
+import time
+import traceback
+import win32con
+import win32evtlog
+import win32evtlogutil
+import winerror
+import sys
+import win32comext.shell.shell as shell
+from pathlib import Path
+
+
+PROJECTPATH = Path(__file__).parent.resolve()
+
+print(f"{PROJECTPATH.parent}\\ProcessMon\\process_monitor.py")
+
+#os.system(f"start /wait cmd /c python {PROJECTPATH}\\ProcessMon\\process_monitor.py")
